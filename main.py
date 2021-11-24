@@ -10,17 +10,11 @@ from sklearn.feature_selection import chi2
 from IPython.display import display
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import cross_val_score
-from sklearn.metrics import confusion_matrix
-from sklearn import metrics
-from sklearn import svm, tree, linear_model, neighbors, naive_bayes, ensemble, discriminant_analysis, gaussian_process
+from sklearn.metrics import confusion_matrix, feature_selection, model_selection
+from sklearn import metrics, svm, tree, linear_model, neighbors, naive_bayes, ensemble, discriminant_analysis, gaussian_process, accuracy_score, recall_score, precision_score, f1_score
 from sklearn.neural_network import MLPClassifier
 from xgboost import XGBClassifier
-from sklearn import feature_selection
-from sklearn import model_selection
-
 
 df = pd.read_excel('/content/gdrive/MyDrive/urban_data.xlsx')
 
